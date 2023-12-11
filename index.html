@@ -1,28 +1,299 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>avere caffe</title>
-    <link rel="stylesheet" href="style.css">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Avere Cafe</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "logo" href = "logo.jpg" type = "logo">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
-<body>
-    <header>
-        <!--nav bar-->
-        <a href="#" class="logo">
-            <img src="" alt="logo">
-        </a>
-        <!--menu icon-->
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <!--link-->
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About us</a></li>
-            <li><a href="#product">Product</a></li>
-            <li><a href="#customer">Customers</a></li>
-        </ul>
-    </header>
-    <script src="script.js"></script>
-</body>
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>TEGAR</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>Avere Cafe</h2>
+                <p>cafe yang ada di surabaya dengan gaya korean cafe dan nuansa yang nyaman buat kamu betah nongkrong lama di sini</p>
+                <button type = "button" class = "head-btn">MEMULAI</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#menu">menu</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Makanan</h2>
+                        <p>Disini kami meneyediakan berbagai makanan,serta dessert yang enak,makanan kami dijamin enak dan berkualitas!</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class="fas fa-coffee"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Minuman</h2>
+                        <p>Disni kami menyediakan minuman seperti jus,smoothies,minuman alkoholpun ada dan juga kami jamin semua minuman dijamin enak serta memakai buah-buahan yang berkualitas!</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Keamanan</h2>
+                        <p>Disini kami menjamin menjaga dan mengatur keamanan cafe serta melakukan pengamanan seluruh area cafe</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "dewasa">Dewasa: </label>
+                    <input type = "number" min = "1" value = "1" id = "dewasa">
+                </div>
+                <div class = "form-item">
+                    <label for = "meja">meja: </label>
+                    <input type = "number" min = "1" value = "1" id = "meja">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "menu sec-width" id = "menu">
+            <div class = "title">
+                <h2>Recoment Menu</h2>
+            </div>
+            <div class = "menu-container">
+                <!--single menu -->
+                <article class = "menu">
+                    <div class = "menu-image">
+                        <img src = "chickien steak.jpg" alt = "menu">
+                    </div>
+                    <div class = "menu-text">
+                        <h3>Chicken Steak</h3>
+                        <p class = "rate">
+                            <span>50.000,00 /</span> Pcs
+                        </p>
+                        <button type = "button" class = "btn">order now</button>
+                    </div>
+                </article>
+                <!-- end of single menu-->
+                <!-- single menu -->
+                <article class = "menu">
+                    <div class = "menu-image">
+                        <img src = "fire wings.jpg" alt = "menu">
+                    </div>
+                    <div class = "menu-text">
+                        <h3>Fire Wings</h3>
+                        <p class = "rate">
+                            <span>250.000,00 /</span> Pcs
+                        </p>
+                        <button type = "button" class = "btn">order now</button>
+                    </div>
+                </article>
+                <!-- end of single menu -->
+                <!-- single menu -->
+                <article class = "menu">
+                    <div class = "menu-image">
+                        <img src = "matcha presso.jpg" alt = "menu">
+                    </div>
+                    <div class = "menu-text">
+                        <h3>Matcha presso</h3>
+                        <p class = "rate">
+                            <span>50.000,00 /</span> Pcs
+                        </p>
+                        <button type = "button" class = "btn">order now</button>
+                    </div>
+                </article>
+                <!-- end of single menu -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Kami Menyukainya</h3>
+                        <p>Pelayanannya sangat bagus dan kualitas terbaik</p>
+                        <img src = "" alt = "customer image">
+                        <span>Desi, Indonesia</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Lingkungan Nyaman</h3>
+                        <p>Lingkungan sangat nyaman sejuk dan bisa mengefreshingkan fikiran</p>
+                        <img src = "" alt = "customer image">
+                        <span>linda,Indonesia</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Tempat yang bagus</h3>
+                        <p>tempat nya nyaman banget....</p>
+                        <img src = "" alt = "customer image">
+                        <span>cindy, Indonesia</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>Tentang Kami</h2>
+                    <p></p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <a href="https://wa.me/qr/CKONEXXLX6AZK1"> <class = "fa fa-whatsapp "> <img src="images/wa-1.png" alt="">
+                        <li class = "flex">
+                            <a href="https://www.instagram.com/avere.hub"> <class = "fa fa-instagram "> <img src="images/ig.jpg" alt="">
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Tautan Berguna</h2>
+                    <a href = "#">Sosial Media</a>
+                    <a href = "#">Berlangganan</a>
+                    <a href = "#">Kartu ucapan</a>
+                </div>
+
+                <div>
+                    <h2>Pribadi</h2>
+                    <a href = "#">Tentang Kami</a>
+                    <a href = "#">Hubungi kami</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                📍Jl. Ngagel Jaya Barat No. 52
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                    +62 838-3719-3345
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            Reservasi WhatsApp
+                            +62 838-3719-3345
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
 </html>
