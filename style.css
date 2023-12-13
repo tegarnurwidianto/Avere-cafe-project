@@ -3,7 +3,7 @@
 :root{
     --transition: all 0.7s ease;
     --yellow: #f9d342;
-    --dark: #292826;
+    --dark: #88AB8E;
 }
 *{
     box-sizing: border-box;
@@ -313,6 +313,7 @@ img{
     padding-bottom: 25px;
     background: var(--dark);
     color: #fff;
+    border-radius: 20%;
 }
 .menu-text{
     padding: 5px 20px;
